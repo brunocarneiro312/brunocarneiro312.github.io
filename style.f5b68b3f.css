@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body button {
+  outline: none;
+}
+
+@font-face {
+  font-family: lobster;
+  src: url("/Lobster-Regular.cfbcf6fe.ttf");
+}
+@font-face {
+  font-family: poppins;
+  src: url("/Poppins-Regular.63054a14.ttf");
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav div {
+  font-family: lobster;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 7.5%;
+}
+
+section#hero {
+  color: white;
+  background: #286EA1;
+  background: linear-gradient(243.54deg, #144F7B -4.5%, #489EDD 108.48%);
+  background-image: url("/bg-section-hero.8e525d76.svg");
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+section#hero .left {
+  display: flex;
+  place-items: center;
+}
+section#hero .left .intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15%;
+  justify-content: center;
+}
+section#hero .left .intro h1 {
+  font-size: 2.5rem;
+  font-family: poppins;
+}
+section#hero .left .intro p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: poppins;
+}
+section#hero .left .intro .cta {
+  margin-top: 2rem;
+  max-width: 250px;
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.5));
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 10px 5px;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+section#hero .left .intro .cta:hover {
+  background: white;
+  color: black;
+}
+section#hero .right {
+  display: flex;
+  place-items: center;
+}
+section#hero .right .img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 15%;
+  animation-name: scale-up-center;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+
+/*# sourceMappingURL=/style.f5b68b3f.css.map */
